@@ -6,45 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCA Notes</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-</head>
-<style>
-    .flex-container{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .flex-items{
-        font-size: 18px;
-        margin: 10px;
-        text-wrap: balance;
-    }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
 
-</style>
+        .flex-items {
+            font-size: 18px;
+            margin: 10px;
+            word-wrap: break-word;
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .download-btn {
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+
 <body>
     <div class="container-fluid">
         <div>
-            <h1 class="h1 text-center" >
-                Rajesh MCA notes
-            </h1>
+            <h1 class="text-center">Rajesh MCA Notes</h1>
             <p class="h3">MCA Notes</p>
         </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-12">
-                <div class="card shadow-lg  bc">
-                    <div class="flex-container">
-                        <div class="flex-items">
-                            <img src="src/img/81--R5kecpL._AC_UY218_.jpg" alt="book img" class="img-fluid">
-                        </div>
-                        <div class="flex-items">
-                            <h2>Advanced os concept</h2>
-                            <a href="src/files/os-concepts-08-edition.pdf" download class="btn btn-primary download-btn">Download</a>
+        <div class="card shadow-lg p-2 m-2">
+            <div class="h2">Sem 1</div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/DiscreteMath_Cover.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Discrete Mathametics</h2>
+                                <a href="src/files/Rosen_Discrete_Mathematics_and_Its_Applications_7th_Edition.rar"
+                                    download class="btn btn-primary download-btn">Download</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/DSA_COVER.jpg" alt="book img" class="card-header">
+                            </div>
+                            <div class="flex-items">
+                                <h2>DSA Using Python</h2>
+                                <a href="DSA_ALL_UNITS.pdf" download class="btn btn-primary download-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/Linux_ss_cover.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>lINUX Shell scripting</h2>
+                                <a href="LINUX_ALL_UNITS.pdf" download
+                                    class="btn btn-primary download-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/MobileCom.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Mobile Computing</h2>
+                                <a href="MOBILE_COMPUTING_ALL_UNITS.pdf" download
+                                    class="btn btn-primary download-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/IOT_Cover.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Iot</h2>
+                                <a href="IOT.rar" download class="btn btn-primary download-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card shadow-lg p-2 m-2">
+            <div class="h2">Sem 2</div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/81--R5kecpL._AC_UY218_.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Advanced OS Concept</h2>
+                                <a href="os-concepts-08-edition.pdf" download
+                                    class="btn btn-primary download-btn">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/BigDataAna_cover.jpg" alt="book img" class="card-header">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Big data</h2>
+                                <button class="btn btn-primary error">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/Webtech_cover.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Web Technology</h2>
+                                <button class="btn btn-primary error">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/DE&micpro_cover.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Digital Electronics & Microprocessor</h2>
+                                <button class="btn btn-primary error">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card shadow-lg bc">
+                        <div class="flex-container">
+                            <div class="flex-items">
+                                <img src="src/img/softcomputing_cover.jpg" alt="book img" class="img-fluid">
+                            </div>
+                            <div class="flex-items">
+                                <h2>Soft Computing</h2>
+                                <button class="btn btn-primary error">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 </body>
-
+<script>
+    $(document).ready(function () {
+        $(".error").mouseenter(function () {
+            $(this).css({ 'cursor': 'not-allowed', 'background-color': 'gray' });
+        })
+    });
+</script>
 </html>
